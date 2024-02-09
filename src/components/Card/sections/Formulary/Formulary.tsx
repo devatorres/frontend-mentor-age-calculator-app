@@ -8,6 +8,7 @@ import {
 } from 'react-hook-form'
 import { ButtonIcon, TextInput } from '../../components'
 import { DateObject } from '../../../../types'
+import { ArrowIcon } from '../../../../assets/icons'
 import './Formulary.css'
 
 type TForm = {
@@ -82,11 +83,13 @@ const Submit = ({ handleSubmit, calculateDate }: TSubmit) => {
 		<section className="wr-submit">
 			<div className="separator" />
 			<ButtonIcon
+				id="btnCalculateDate"
 				isFloat
 				action={handleSubmit((data: DateObject) => {
 					calculateDate(data)
-				})}
-			/>
+				})}>
+				<ArrowIcon className="icon-size" />
+			</ButtonIcon>
 		</section>
 	)
 }

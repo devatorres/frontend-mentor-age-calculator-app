@@ -1,17 +1,28 @@
-import { ArrowIcon } from '../../../../assets/icons'
+import { ReactElement } from 'react'
 import './ButtonIcon.css'
 
 type TButtonIcon = {
+	id: string
 	action: () => void
-	isFloat: boolean
+	children: ReactElement
+	isFloat?: boolean
 }
 
-export const ButtonIcon = ({ action, isFloat = false }: TButtonIcon) => {
+export const ButtonIcon = ({
+	id,
+	action,
+	children,
+	isFloat = false
+}: TButtonIcon) => {
 	return (
 		<button
+			id={id}
+			name={id}
+			title="Calcular fecha"
+			role="button"
 			className={`button-icon ${isFloat ? 'float' : ''}`}
 			onClick={action}>
-			<ArrowIcon className="icon-size" />
+			{children}
 		</button>
 	)
 }

@@ -1,5 +1,3 @@
-import './Icon.css'
-
 export const ArrowIcon = ({ ...props }) => {
 	return (
 		<svg
