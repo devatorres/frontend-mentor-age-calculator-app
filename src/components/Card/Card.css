@@ -1,0 +1,27 @@
+.wr-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 1rem;
+}
+
+.card {
+	--padding-small: 3.5rem;
+
+	width: min(100%, 840px);
+	background-color: var(--bg-card);
+	padding-block: var(--padding-small);
+	padding-inline: min(var(--padding-small), 6.5vw);
+}
+
+.card.radius {
+	--radius-small: 1.25rem;
+	--radius-big: 100px;
+
+	border-top-left-radius: var(--radius-small);
+	border-top-right-radius: var(--radius-small);
+	border-bottom-right-radius: min(var(--radius-big), 14vw);
+	border-bottom-left-radius: var(--radius-small);
+}

@@ -1,0 +1,39 @@
+.button-icon {
+	--size-button: min(6rem, 17vw);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	appearance: none;
+	cursor: pointer;
+	user-select: none;
+	aspect-ratio: 1 / 1;
+	width: var(--size-button);
+	height: var(--size-button);
+	background-color: var(--color-purple);
+	border: none;
+	border-radius: 50%;
+	transition: background-color 150ms ease;
+}
+
+.button-icon:is(:hover, :active) {
+	background-color: var(--color-button-hover);
+}
+
+.button-icon.float {
+	--size-button: min(6rem, 17vw);
+
+	position: absolute;
+	top: calc(50% - calc(var(--size-button) / 2));
+	right: 0;
+}
+
+.button-icon > svg {
+	stroke: var(--color-button-icon);
+}
+
+@media screen and (max-width: 375px) {
+	.button-icon.float {
+		right: calc(50% - calc(var(--size-button) / 2));
+	}
+}
