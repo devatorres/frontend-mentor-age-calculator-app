@@ -56,6 +56,9 @@ Users should be able to:
 - Responsive
 - [React](https://reactjs.org/) - JS library
 - Vite
+- YUP
+- Zustand
+- React hook form
 
 ### What I learned
 

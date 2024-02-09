@@ -1,5 +1,10 @@
+import { Card } from '../../components'
 import './Home.css'
 
 export const Home = () => {
-	return <section className="home"></section>
+	return (
+		<div className="home">
+			<Card />
+		</div>
+	)
 }

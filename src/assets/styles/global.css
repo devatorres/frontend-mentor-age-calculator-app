@@ -1,22 +1,32 @@
 :root {
-	--font-size-input: 32px;
 	--color-off-white: hsl(0, 0%, 94%);
-	--color-light-grey: hsl(0, 0%, 86%);
+	--color-light-white: hsl(0, 0%, 86%);
 	--color-smokey-grey: hsl(0, 1%, 44%);
 	--color-off-black: hsl(0, 0%, 8%);
+	--color-light-black: hsla(0, 0%, 0%, 18);
 	--color-purple: hsl(259, 100%, 65%);
 	--color-light-red: hsl(0, 100%, 67%);
 }
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--bg-app: var(--color-off-white);
+		--bg-app: var(--color-light-white);
+		--bg-card: var(--color-off-white);
+		--border-input: var(--color-light-white);
+		--color-input: var(--color-light-black);
+		--color-button-hover: var(--color-light-black);
+		--color-button-icon: var(--color-off-white);
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--bg-app: var(--color-off-black);
+		--bg-card: var(--color-light-black);
+		--border-input: var(--color-off-black);
+		--color-input: var(--color-off-white);
+		--color-button-hover: var(--color-off-white);
+		--color-button-icon: var(--color-light-black);
 	}
 }
 

@@ -1,0 +1,33 @@
+.wr-formulary {
+	width: 100%;
+}
+
+.formulary {
+	width: 100%;
+}
+
+.wr-inputs {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: start;
+	align-items: start;
+	column-gap: min(2rem, 4.3vw);
+	width: 100%;
+}
+
+.wr-submit {
+	position: relative;
+	width: 100%;
+	margin-top: 3rem;
+}
+
+.separator {
+	width: 100%;
+	border-top: solid 1px var(--border-input);
+}
+
+@media screen and (max-width: 680px) {
+	.wr-submit {
+		margin-top: 4rem;
+	}
+}

@@ -1,0 +1,6 @@
+.icon-size {
+	--size: min(8vw, 2.75rem);
+
+	width: var(--size);
+	height: var(--size);
+}
