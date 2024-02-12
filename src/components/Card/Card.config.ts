@@ -4,20 +4,21 @@ import dayjs from 'dayjs'
 export const formSchema = Yup.object().shape({
 	day: Yup.number()
 		.integer()
-		.typeError('Must be a valid day')
+		.typeError('This field is required')
 		.required('This field is required')
 		.min(1, 'Must be a valid day')
 		.max(31, 'Must be a valid day'),
 	month: Yup.number()
 		.integer()
-		.typeError('Must be a valid month')
+		.typeError('This field is required')
 		.required('This field is required')
-		.min(1, 'Must be a valid day')
-		.max(12, 'Must be a valid day'),
+		.min(1, 'Must be a valid month')
+		.max(12, 'Must be a valid month'),
 	year: Yup.number()
 		.integer()
-		.typeError('Must be in the past')
+		.typeError('This field is required')
 		.required('This field is required')
+		.min(1000, 'Must be a valid year')
 		.test('is-valid-year', 'Must be in the past', (value) => {
 			const currentYear = dayjs().year()
 			return value <= currentYear

@@ -1,0 +1,17 @@
+html {
+	scroll-behavior: smooth;
+	background-color: var(--bg-app);
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	width: 100vw;
+	min-height: 100vh;
+	font-size: 16px;
+	background-color: transparent;
+}
+
+[id='root'] {
+	width: 100vw;
+	min-height: 100vh;
+}
