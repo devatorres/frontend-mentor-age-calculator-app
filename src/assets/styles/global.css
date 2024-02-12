@@ -1,7 +1,7 @@
 :root {
 	--color-off-white: hsl(0, 0%, 94%);
 	--color-light-white: hsl(0, 0%, 86%);
-	--color-smokey-grey: hsl(0, 1%, 44%);
+	--color-smokey-grey: hsl(0, 1%, 31%);
 	--color-smokey-white: hsl(0, 1%, 59%);
 	--color-off-black: hsl(0, 0%, 8%);
 	--color-light-black: hsla(0, 0%, 0%, 18);
@@ -17,6 +17,7 @@
 	--color-button-hover: var(--color-light-black);
 	--color-button-icon: var(--color-off-white);
 	--color-label: var(--color-smokey-grey);
+	--color-text: var(--color-light-black);
 }
 
 :root[data-theme='dark'] {
@@ -27,6 +28,7 @@
 	--color-button-hover: var(--color-off-white);
 	--color-button-icon: var(--color-light-black);
 	--color-label: var(--color-smokey-white);
+	--color-text: var(--color-off-white);
 }
 
 :is(*, *:before, *::after) {
@@ -53,6 +55,17 @@
 		'Open Sans',
 		'Helvetica Neue',
 		sans-serif;
+}
+
+/* Code for Firefox */
+::-moz-selection {
+	color: var(--color-off-white);
+	background: var(--color-purple);
+}
+
+::selection {
+	color: var(--color-off-white);
+	background: var(--color-purple);
 }
 
 /* Chrome, Safari, Edge, Opera */

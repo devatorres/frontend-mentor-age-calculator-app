@@ -18,7 +18,7 @@
 .wr-submit {
 	position: relative;
 	width: 100%;
-	margin-top: 3rem;
+	margin-block: 3rem;
 }
 
 .separator {

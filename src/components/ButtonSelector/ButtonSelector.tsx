@@ -1,6 +1,7 @@
 import './ButtonSelector.css'
 
 type TButtonSelector = {
+	id: string
 	toggle: () => void
 	isOnce: () => boolean
 	OnceIcon: JSX.Element
@@ -8,13 +9,19 @@ type TButtonSelector = {
 }
 
 export const ButtonSelector = ({
+	id,
 	toggle,
 	isOnce,
 	OnceIcon,
 	OtherIcon
 }: TButtonSelector) => {
 	return (
-		<button className="btn-selector" onClick={toggle}>
+		<button
+			id={id}
+			name={id}
+			role="button"
+			className="btn-selector"
+			onClick={toggle}>
 			{isOnce() ? OnceIcon : OtherIcon}
 		</button>
 	)

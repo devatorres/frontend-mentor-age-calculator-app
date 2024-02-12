@@ -1,3 +1,2 @@
-export * from './format'
-export * from './isValidDate'
+export * from './dates'
 export * from './storage'

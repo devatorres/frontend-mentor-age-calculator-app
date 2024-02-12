@@ -1,5 +1,5 @@
 import * as Yup from 'yup'
-import dayjs from 'dayjs'
+import { getYear } from 'date-fns'
 
 export const formSchema = Yup.object().shape({
 	day: Yup.number()
@@ -20,7 +20,7 @@ export const formSchema = Yup.object().shape({
 		.required('This field is required')
 		.min(1000, 'Must be a valid year')
 		.test('is-valid-year', 'Must be in the past', (value) => {
-			const currentYear = dayjs().year()
+			const currentYear = getYear(new Date())
 			return value <= currentYear
 		})
 })
