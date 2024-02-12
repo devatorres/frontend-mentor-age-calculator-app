@@ -1,5 +1,5 @@
-import dayjs from 'dayjs'
 import { Fragment, ReactElement } from 'react'
+import { getYear } from 'date-fns'
 import {
 	Control,
 	FieldErrors,
@@ -72,7 +72,7 @@ const Inputs = ({ control, errors }: TInputs) => {
 				label="YEAR"
 				name="year"
 				placeholder="YYYY"
-				max={dayjs().year()}
+				max={getYear(new Date())}
 			/>
 		</section>
 	)

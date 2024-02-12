@@ -4,10 +4,13 @@ import { FormProvider, useForm } from 'react-hook-form'
 import { formSchema } from './Card.config'
 import { WrCard, Formulary, Preview } from './sections'
 import { DateObject, initialValues } from '../../types'
-import { format, isValidDate } from '../../utils'
+import { format, getDiff, isValidDate } from '../../utils'
 import './Card.css'
+import { usePreviewStore } from './hooks'
+import { DEFAULT_DATE } from '../../constants'
 
 export const Card = () => {
+	const { setDate } = usePreviewStore()
 	const methods = useForm<DateObject>({
 		values: initialValues(),
 		mode: 'onBlur',
@@ -23,10 +26,11 @@ export const Card = () => {
 				message: 'Must be a valid date'
 			})
 			methods.setError('month', { type: 'custom', message: ' ' })
-			return methods.setError('year', { type: 'custom', message: ' ' })
+			methods.setError('year', { type: 'custom', message: ' ' })
+			return setDate(DEFAULT_DATE)
 		}
 
-		// sdiopfsdofhj
+		setDate(getDiff(date))
 	}
 
 	return (

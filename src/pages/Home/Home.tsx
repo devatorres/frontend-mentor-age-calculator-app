@@ -9,6 +9,7 @@ export const Home = () => {
 	return (
 		<div className="home">
 			<ButtonSelector
+				id="themeSelector"
 				isOnce={isDark}
 				toggle={toggleTheme}
 				OnceIcon={<SunIcon />}

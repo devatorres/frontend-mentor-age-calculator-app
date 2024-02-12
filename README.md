@@ -37,7 +37,9 @@ Users should be able to:
 ### Screenshot
 
 <img src='./src/assets/images/final/desktop.png' width='640px' alt='Desktop Design' />
-<img src='./src/assets/images/final/mobile.png' width='640px' alt='Mobile Design' />
+<img src='./src/assets/images/final/desktop_errors.png' width='640px' alt='Desktop Design With Errors' />
+<img src='./src/assets/images/final/desktop_invalid_dark.png' width='640px' alt='Desktop Design With Invalid Date In Dark Mode' />
+<img src='./src/assets/images/final/mobile_invalid.png' width='640px' alt='Mobile Design' />
 
 ### Links
 
