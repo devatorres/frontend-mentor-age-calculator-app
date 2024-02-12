@@ -11,7 +11,7 @@
 .wr-input > label {
 	letter-spacing: min(0.6vw, 0.2rem);
 	font-size: min(2.8vw, 1rem);
-	color: var(--color-smokey-grey);
+	color: var(--color-label);
 	margin-bottom: min(1.2vw, 0.8rem);
 	transition: color 150ms ease;
 }
@@ -31,9 +31,6 @@
 .text-input {
 	--radius-input: 5px;
 
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 	user-select: none;
 	width: 100%;
 	height: min(14vw, 60px);

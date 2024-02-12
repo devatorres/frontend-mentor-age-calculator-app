@@ -2,6 +2,7 @@
 	--color-off-white: hsl(0, 0%, 94%);
 	--color-light-white: hsl(0, 0%, 86%);
 	--color-smokey-grey: hsl(0, 1%, 44%);
+	--color-smokey-white: hsl(0, 1%, 59%);
 	--color-off-black: hsl(0, 0%, 8%);
 	--color-light-black: hsla(0, 0%, 0%, 18);
 	--color-purple: hsl(259, 100%, 65%);
@@ -16,6 +17,7 @@
 		--color-input: var(--color-light-black);
 		--color-button-hover: var(--color-light-black);
 		--color-button-icon: var(--color-off-white);
+		--color-label: var(var(--color-smokey-grey));
 	}
 }
 
@@ -27,6 +29,7 @@
 		--color-input: var(--color-off-white);
 		--color-button-hover: var(--color-off-white);
 		--color-button-icon: var(--color-light-black);
+		--color-label: var(--color-smokey-white);
 	}
 }
 
@@ -72,4 +75,16 @@ body {
 [id='root'] {
 	width: 100vw;
 	min-height: 100vh;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
 }
