@@ -1,0 +1,24 @@
+.btn-selector {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	appearance: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 40px;
+	background-color: var(--color-purple);
+	border: none;
+	border-radius: 30rem;
+	cursor: pointer;
+	transition: background-color 180ms ease;
+}
+
+.btn-selector:is(:hover, :active) {
+	background-color: var(--color-button-hover);
+}
+
+.btn-selector > svg {
+	fill: var(--color-button-icon);
+}

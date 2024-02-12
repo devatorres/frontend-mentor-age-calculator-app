@@ -9,28 +9,24 @@
 	--color-light-red: hsl(0, 100%, 67%);
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		--bg-app: var(--color-light-white);
-		--bg-card: var(--color-off-white);
-		--border-input: var(--color-light-white);
-		--color-input: var(--color-light-black);
-		--color-button-hover: var(--color-light-black);
-		--color-button-icon: var(--color-off-white);
-		--color-label: var(var(--color-smokey-grey));
-	}
+:root[data-theme='light'] {
+	--bg-app: var(--color-light-white);
+	--bg-card: var(--color-off-white);
+	--border-input: var(--color-light-white);
+	--color-input: var(--color-light-black);
+	--color-button-hover: var(--color-light-black);
+	--color-button-icon: var(--color-off-white);
+	--color-label: var(--color-smokey-grey);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg-app: var(--color-off-black);
-		--bg-card: var(--color-light-black);
-		--border-input: var(--color-off-black);
-		--color-input: var(--color-off-white);
-		--color-button-hover: var(--color-off-white);
-		--color-button-icon: var(--color-light-black);
-		--color-label: var(--color-smokey-white);
-	}
+:root[data-theme='dark'] {
+	--bg-app: var(--color-off-black);
+	--bg-card: var(--color-light-black);
+	--border-input: var(--color-off-black);
+	--color-input: var(--color-off-white);
+	--color-button-hover: var(--color-off-white);
+	--color-button-icon: var(--color-light-black);
+	--color-label: var(--color-smokey-white);
 }
 
 :is(*, *:before, *::after) {
@@ -57,24 +53,6 @@
 		'Open Sans',
 		'Helvetica Neue',
 		sans-serif;
-}
-
-html {
-	scroll-behavior: smooth;
-	background-color: var(--bg-app);
-	-webkit-tap-highlight-color: transparent;
-}
-
-body {
-	width: 100vw;
-	min-height: 100vh;
-	font-size: 16px;
-	background-color: transparent;
-}
-
-[id='root'] {
-	width: 100vw;
-	min-height: 100vh;
 }
 
 /* Chrome, Safari, Edge, Opera */

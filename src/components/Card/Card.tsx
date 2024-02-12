@@ -1,11 +1,10 @@
-import dayjs from 'dayjs'
-
 import { yupResolver } from '@hookform/resolvers/yup'
 import { FormProvider, useForm } from 'react-hook-form'
 
 import { formSchema } from './Card.config'
 import { WrCard, Formulary, Preview } from './sections'
 import { DateObject, initialValues } from '../../types'
+import { format, isValidDate } from '../../utils'
 import './Card.css'
 
 export const Card = () => {
@@ -16,13 +15,18 @@ export const Card = () => {
 	})
 
 	const calculateDate = ({ day, month, year }: DateObject) => {
-		const date = `${year}/${month}/${day}`
+		const date = `${year}/${format(month)}/${format(day)}`
 
-		if (!dayjs(date).isValid())
-			return methods.setError('day', {
+		if (!isValidDate(date)) {
+			methods.setError('day', {
 				type: 'custom',
 				message: 'Must be a valid date'
 			})
+			methods.setError('month', { type: 'custom', message: ' ' })
+			return methods.setError('year', { type: 'custom', message: ' ' })
+		}
+
+		// sdiopfsdofhj
 	}
 
 	return (
