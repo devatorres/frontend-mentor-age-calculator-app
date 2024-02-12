@@ -19,6 +19,7 @@ export const ButtonSelector = ({
 		<button
 			id={id}
 			name={id}
+			title={id}
 			role="button"
 			className="btn-selector"
 			onClick={toggle}>
