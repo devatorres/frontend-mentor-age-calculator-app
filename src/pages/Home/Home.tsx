@@ -4,16 +4,16 @@ import { MoonIcon, SunIcon } from '../../assets/icons'
 import './Home.css'
 
 export const Home = () => {
-	const { isDark, toggleTheme } = useTheme()
+	const { isLight, toggleTheme } = useTheme()
 
 	return (
 		<div className="home">
 			<ButtonSelector
-				id="themeSelector"
-				isOnce={isDark}
+				id="Seleccionar tema"
+				isOnce={isLight}
 				toggle={toggleTheme}
-				OnceIcon={<SunIcon />}
-				OtherIcon={<MoonIcon />}
+				OnceIcon={<MoonIcon />}
+				OtherIcon={<SunIcon />}
 			/>
 			<Card />
 		</div>

@@ -11,7 +11,7 @@
 	background-color: var(--color-purple);
 	border: none;
 	border-radius: 30rem;
-	cursor: pointer;
+	cursor: url('../../assets/images/handpointing.png'), pointer;
 	transition: background-color 180ms ease;
 }
 
