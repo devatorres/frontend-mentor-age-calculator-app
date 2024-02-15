@@ -1,3 +1,4 @@
+import VisibilitySensor from 'react-visibility-sensor'
 import CountUp from 'react-countup'
 import { usePreviewStore } from '../../hooks'
 import './Preview.css'
@@ -12,7 +13,11 @@ const CountUpValue = ({ value }: { value: number | undefined }) => {
 		<span className="textValue noValue">{'--'}</span>
 	) : (
 		<CountUp end={value} duration={6}>
-			{({ countUpRef }) => <span ref={countUpRef} className="textValue" />}
+			{({ countUpRef, start }) => (
+				<VisibilitySensor onChange={start}>
+					<span ref={countUpRef} className="textValue" />
+				</VisibilitySensor>
+			)}
 		</CountUp>
 	)
 }
