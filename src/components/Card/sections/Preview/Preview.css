@@ -12,7 +12,7 @@
 
 .textValue {
 	color: var(--color-purple);
-	letter-spacing: 1.5rem;
+	letter-spacing: min(1.5vw, 1rem);
 }
 
 .noValue {
@@ -20,5 +20,11 @@
 }
 
 .less-spacing {
-	margin-left: -1.5rem;
+	margin-left: -1rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.less-spacing {
+		margin-left: -0.5rem;
+	}
 }
