@@ -43,6 +43,7 @@ export const TextInput = ({
 							inputMode="numeric"
 							spellCheck="false"
 							autoComplete="off"
+							onFocus={(e) => e.target.select()}
 						/>
 						{isError() && <p className="error-message">{error?.message}</p>}
 					</div>
