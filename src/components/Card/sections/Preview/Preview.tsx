@@ -20,7 +20,8 @@ const CountUpValue = ({ value }: { value: number | undefined }) => {
 const PreviewRow = ({ label, value }: TPreviewRow) => {
 	return (
 		<p className="text">
-			<CountUpValue value={value} /> {label}
+			<CountUpValue value={value} />{' '}
+			<span className="less-spacing">{label}</span>
 		</p>
 	)
 }

@@ -12,8 +12,13 @@
 
 .textValue {
 	color: var(--color-purple);
+	letter-spacing: 1.5rem;
 }
 
 .noValue {
 	user-select: none;
+}
+
+.less-spacing {
+	margin-left: -1.5rem;
 }

@@ -1,4 +1,4 @@
-# Frontend Mentor - Age calculator app [![Netlify Status](https://api.netlify.com/api/v1/badges/8d5cfd86-5689-4979-9385-5d18a92c5358/deploy-status)](https://app.netlify.com/sites/gorgeous-starburst-788b67/deploys)
+# Frontend Mentor - Age calculator app [![Netlify Status](https://api.netlify.com/api/v1/badges/569adf28-f989-4f02-89ea-8709c50d0384/deploy-status)](https://app.netlify.com/sites/stately-sunshine-d40e54/deploys)
 
 [![Lighthouse Status](https://img.shields.io/badge/-Performance%2099-09864c?style=flat-square&logo=lighthouse&logoColor=white)](https://app.netlify.com/sites/wizardly-hoover-860206/deploys)
 [![Lighthouse Status](https://img.shields.io/badge/-Accessibility%20100-09864c?style=flat-square&logo=lighthouse&logoColor=white)](https://app.netlify.com/sites/wizardly-hoover-860206/deploys)
