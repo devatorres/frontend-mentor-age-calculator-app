@@ -9,7 +9,7 @@ type TPreviewRow = {
 
 const CountUpValue = ({ value }: { value: number | undefined }) => {
 	return typeof value === 'undefined' ? (
-		<span className="textValue">{'--'}</span>
+		<span className="textValue noValue">{'--'}</span>
 	) : (
 		<CountUp end={value} duration={6}>
 			{({ countUpRef }) => <span ref={countUpRef} className="textValue" />}

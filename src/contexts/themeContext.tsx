@@ -9,13 +9,13 @@ type ThemeProviderProps = {
 export const ThemeContext = createContext(undefined)
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-	const [theme, setTheme] = useState(THEME.DARK)
+	const [theme, setTheme] = useState(THEME.LIGHT)
 
-	const isDark = () => theme === THEME.DARK
+	const isLight = () => theme === THEME.LIGHT
 
 	const toggleTheme = () => {
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		const newTheme = theme === THEME.DARK ? THEME.LIGHT : (THEME.DARK as any)
+		const newTheme = isLight() ? THEME.DARK : (THEME.LIGHT as any)
 		setTheme(newTheme)
 		setThemeDataStorage(newTheme)
 		_putTheme(newTheme)
@@ -50,7 +50,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 
 	return (
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
-		<ThemeContext.Provider value={{ theme, isDark, toggleTheme } as any}>
+		<ThemeContext.Provider value={{ theme, isLight, toggleTheme } as any}>
 			{children}
 		</ThemeContext.Provider>
 	)

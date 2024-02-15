@@ -9,6 +9,7 @@ body {
 	min-height: 100vh;
 	font-size: 16px;
 	background-color: transparent;
+	cursor: url('../images/default.png'), auto;
 }
 
 [id='root'] {

@@ -9,6 +9,7 @@
 }
 
 .wr-input > label {
+	cursor: url('../../../../assets/images/default.png'), default;
 	letter-spacing: min(0.6vw, 0.2rem);
 	font-size: min(2.8vw, 1rem);
 	color: var(--color-label);
@@ -31,6 +32,7 @@
 .text-input {
 	--radius-input: 5px;
 
+	cursor: url('../../../../assets/images/textcursor.png'), text;
 	user-select: none;
 	width: 100%;
 	height: min(14vw, 60px);

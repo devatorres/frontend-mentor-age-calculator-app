@@ -13,3 +13,7 @@
 .textValue {
 	color: var(--color-purple);
 }
+
+.noValue {
+	user-select: none;
+}
