@@ -26,7 +26,5 @@ export const getDiff = (date: string) => {
 	const months = differenceInMonths(now, currentDate) % 12
 	const days = differenceInDays(now, currentDate) % 30
 
-	console.log(years, months, days)
-
 	return { years, months, days }
 }
